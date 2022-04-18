@@ -39,31 +39,31 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -134,6 +134,7 @@
             this.button1.TabIndex = 4;
             this.button1.Text = "Добавить";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox2
             // 
@@ -202,25 +203,184 @@
             this.tabPage2.Text = "Материалы";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
-            // label3
+            // dataGridView2
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(11, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(95, 15);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Тип материала:";
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Location = new System.Drawing.Point(10, 208);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.RowTemplate.Height = 25;
+            this.dataGridView2.Size = new System.Drawing.Size(693, 201);
+            this.dataGridView2.TabIndex = 24;
             // 
-            // label4
+            // button6
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(11, 53);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(179, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Параметры св-ств материала:";
+            this.button6.Location = new System.Drawing.Point(232, 167);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(104, 31);
+            this.button6.TabIndex = 23;
+            this.button6.Text = "Удалить";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(117, 167);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(109, 31);
+            this.button5.TabIndex = 22;
+            this.button5.Text = "Изменить";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(11, 167);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(100, 31);
+            this.button4.TabIndex = 21;
+            this.button4.Text = "Добавить";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Location = new System.Drawing.Point(603, 166);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(100, 23);
+            this.textBox11.TabIndex = 20;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(603, 137);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(100, 23);
+            this.textBox10.TabIndex = 19;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(603, 108);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(100, 23);
+            this.textBox9.TabIndex = 18;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(603, 79);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 23);
+            this.textBox8.TabIndex = 17;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(603, 50);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 23);
+            this.textBox7.TabIndex = 16;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(223, 134);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(100, 23);
+            this.textBox6.TabIndex = 15;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(223, 105);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(100, 23);
+            this.textBox5.TabIndex = 14;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(223, 76);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(100, 23);
+            this.textBox4.TabIndex = 13;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(223, 17);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(121, 23);
+            this.comboBox1.TabIndex = 12;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(362, 164);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(223, 30);
+            this.label13.TabIndex = 11;
+            this.label13.Text = "Коэф.  тпелоотдачи от крышки канала \r\nк материалу (Вт/(м2*С))";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(362, 142);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(156, 15);
+            this.label12.TabIndex = 10;
+            this.label12.Text = "Индекс течения материала";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(362, 111);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(125, 15);
+            this.label11.TabIndex = 9;
+            this.label11.Text = "Темп. приведения (С)";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(362, 84);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(215, 15);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Темп. коэф. вязкости материала (1/С)";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(362, 44);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(185, 30);
+            this.label9.TabIndex = 7;
+            this.label9.Text = "Коэф. консистенции материала \r\nпри темп. приведения (Па*с^n)";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 137);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(201, 15);
+            this.label8.TabIndex = 6;
+            this.label8.Text = "Температура плавления (Дж/кг*С))";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(11, 108);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(139, 15);
+            this.label7.TabIndex = 5;
+            this.label7.Text = "Скорость крышки (м/с)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(11, 79);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(108, 15);
+            this.label6.TabIndex = 4;
+            this.label6.Text = "Плотность (кг/м3)";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(112, 15);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(100, 23);
+            this.textBox3.TabIndex = 3;
             // 
             // label5
             // 
@@ -232,184 +392,25 @@
             this.label5.TabIndex = 2;
             this.label5.Text = "Эмпирические коэф. математической модели:";
             // 
-            // textBox3
+            // label4
             // 
-            this.textBox3.Location = new System.Drawing.Point(112, 15);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 23);
-            this.textBox3.TabIndex = 3;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(11, 53);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(179, 15);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Параметры св-ств материала:";
             // 
-            // label6
+            // label3
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(11, 79);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(108, 15);
-            this.label6.TabIndex = 4;
-            this.label6.Text = "Плотность (кг/м3)";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(11, 108);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(139, 15);
-            this.label7.TabIndex = 5;
-            this.label7.Text = "Скорость крышки (м/с)";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(6, 137);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(201, 15);
-            this.label8.TabIndex = 6;
-            this.label8.Text = "Температура плавления (Дж/кг*С))";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(362, 44);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(185, 30);
-            this.label9.TabIndex = 7;
-            this.label9.Text = "Коэф. консистенции материала \r\nпри темп. приведения (Па*с^n)";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(362, 84);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(215, 15);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Темп. коэф. вязкости материала (1/С)";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(362, 111);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(125, 15);
-            this.label11.TabIndex = 9;
-            this.label11.Text = "Темп. приведения (С)";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(362, 142);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(156, 15);
-            this.label12.TabIndex = 10;
-            this.label12.Text = "Индекс течения материала";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(362, 164);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(223, 30);
-            this.label13.TabIndex = 11;
-            this.label13.Text = "Коэф.  тпелоотдачи от крышки канала \r\nк материалу (Вт/(м2*С))";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(223, 17);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 23);
-            this.comboBox1.TabIndex = 12;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(223, 76);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 23);
-            this.textBox4.TabIndex = 13;
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(223, 105);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 23);
-            this.textBox5.TabIndex = 14;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(223, 134);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 23);
-            this.textBox6.TabIndex = 15;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(603, 50);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 23);
-            this.textBox7.TabIndex = 16;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(603, 79);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 23);
-            this.textBox8.TabIndex = 17;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(603, 108);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(100, 23);
-            this.textBox9.TabIndex = 18;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(603, 137);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(100, 23);
-            this.textBox10.TabIndex = 19;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(603, 166);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(100, 23);
-            this.textBox11.TabIndex = 20;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(11, 167);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(100, 31);
-            this.button4.TabIndex = 21;
-            this.button4.Text = "Добавить";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(117, 167);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(109, 31);
-            this.button5.TabIndex = 22;
-            this.button5.Text = "Изменить";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(232, 167);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(104, 31);
-            this.button6.TabIndex = 23;
-            this.button6.Text = "Удалить";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(10, 208);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.RowTemplate.Height = 25;
-            this.dataGridView2.Size = new System.Drawing.Size(693, 201);
-            this.dataGridView2.TabIndex = 24;
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(11, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(95, 15);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Тип материала:";
             // 
             // Form3
             // 
