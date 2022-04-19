@@ -17,9 +17,30 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e) //add log/password
         {
+            if (!CheckingLogAndPassword())
+            {
+                MessageBox.Show("Все поля должны быть заполнены!");
+                return;
+            }
+        }     
 
+        private void button2_Click(object sender, EventArgs e) //change log/password
+        {
+            if (!CheckingLogAndPassword())
+            {
+                MessageBox.Show("Все поля должны быть заполнены!");
+                return;
+            }
+        }
+
+        bool CheckingLogAndPassword()
+        {
+            if (textBox1.Text == "") textBox1.BackColor = Color.Red;
+            if (textBox2.Text == "") textBox2.BackColor = Color.Red;
+            if (textBox1.Text == "" || textBox2.Text == "") return false;
+            return true;
         }
     }
 }
